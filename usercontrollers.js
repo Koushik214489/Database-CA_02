@@ -7,16 +7,15 @@ const read = async(req,res) =>{
             res.status(400).json({
                 message: "No tasks present"
             })
-        
-        }
+         
+        }                                                                             
         res.status(200).json(display)
 
     }
-    catch(err){
+    catch(error){
         console.log(`Internal server error${err}`)
     }
 }
-
 
 
 
